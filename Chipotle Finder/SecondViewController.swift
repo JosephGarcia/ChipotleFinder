@@ -14,7 +14,12 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var map: MKMapView!
     
+    let regionRadius: CLLocationDistance = 2000
+    
     let locationManager = CLLocationManager()
+    
+    let nearbyRequest = MKLocalSearchRequest()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,11 +49,39 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    func getNearbyPlaces(location: CLLocation) {
+        nearbyRequest.naturalLanguageQuery = "chipotle"
+        nearbyRequest.region = map.region
+        
+        let search = MKLocalSearch(request: nearbyRequest)
+        search.startWithCompletionHandler { (response, error) -> Void in
+            if let chipotles = response?.mapItems {
+                for chipotleLocation in chipotles {
+                    if let mark = chipotleLocation.placemark as? MKAnnotation {
+                        self.map.addAnnotation(mark)
+                    }
+                }
+            }
+        }
+    }
+    
     func locationAuthStatus() {
         if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
             map.showsUserLocation = true
         } else {
             locationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordianteRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
+        map.setRegion(coordianteRegion, animated: true)
+    }
+    
+    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+        if let loc = userLocation.location {
+            centerMapOnLocation(loc)
+            getNearbyPlaces(loc)
         }
     }
 }

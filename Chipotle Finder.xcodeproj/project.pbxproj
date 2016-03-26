@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8C009EC41CA51E3B00E5717A /* Chipotle Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chipotle Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C009EC41CA51E3B00E5717A /* Chipotle Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Chipotle Finder.app"; path = "/Users/josephgarcia/Desktop/iOS/Chipotle Finder/build/Debug-iphoneos/Chipotle Finder.app"; sourceTree = "<absolute>"; };
 		8C009EC71CA51E3B00E5717A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C009EC91CA51E3B00E5717A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		8C009ECB1CA51E3B00E5717A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -41,16 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				8C009EC61CA51E3B00E5717A /* Chipotle Finder */,
-				8C009EC51CA51E3B00E5717A /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		8C009EC51CA51E3B00E5717A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8C009EC41CA51E3B00E5717A /* Chipotle Finder.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		8C009EC61CA51E3B00E5717A /* Chipotle Finder */ = {
@@ -111,7 +102,7 @@
 				Base,
 			);
 			mainGroup = 8C009EBB1CA51E3B00E5717A;
-			productRefGroup = 8C009EC51CA51E3B00E5717A /* Products */;
+			productRefGroup = 8C009EBB1CA51E3B00E5717A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -288,6 +279,7 @@
 				8C009EDA1CA51E3B00E5717A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
