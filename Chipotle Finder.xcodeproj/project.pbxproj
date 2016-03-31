@@ -19,6 +19,7 @@
 		8C0577EF1CABC5EE00D82291 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C0577EB1CABC5EE00D82291 /* NotoSans-Regular.ttf */; };
 		8C0577F21CABC8BC00D82291 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0577F11CABC8BC00D82291 /* MaterialView.swift */; };
 		8C0577F41CABCAEB00D82291 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0577F31CABCAEB00D82291 /* MaterialButton.swift */; };
+		8C2B53611CAC7D1F0065BEE9 /* ChipotleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B53601CAC7D1F0065BEE9 /* ChipotleCell.swift */; };
 		9F3FF31D6B7756DC9ACE23E8 /* Pods_Chipotle_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FE199197CD9A8A9713172A /* Pods_Chipotle_Finder.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		8C0577EB1CABC5EE00D82291 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		8C0577F11CABC8BC00D82291 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		8C0577F31CABCAEB00D82291 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		8C2B53601CAC7D1F0065BEE9 /* ChipotleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipotleCell.swift; sourceTree = "<group>"; };
 		B5FE199197CD9A8A9713172A /* Pods_Chipotle_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chipotle_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E170FF19EC84BE76E06FA9C7 /* Pods-Chipotle Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chipotle Finder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chipotle Finder/Pods-Chipotle Finder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 			children = (
 				8C0577F11CABC8BC00D82291 /* MaterialView.swift */,
 				8C0577F31CABCAEB00D82291 /* MaterialButton.swift */,
+				8C2B53601CAC7D1F0065BEE9 /* ChipotleCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				8C009ECA1CA51E3B00E5717A /* FirstViewController.swift in Sources */,
 				8C0577F21CABC8BC00D82291 /* MaterialView.swift in Sources */,
 				8C0577F41CABCAEB00D82291 /* MaterialButton.swift in Sources */,
+				8C2B53611CAC7D1F0065BEE9 /* ChipotleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
